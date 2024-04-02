@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'Kraken';
+    src: url(fonts/Kraken-X3wwK.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.headh1 {
+    font-family: 'Kraken', sans-serif;
+    font-size: 3rem;
+    color: #ff3333; /* Red color */
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: Kraken, sans-serif;
+    border: 2px solid #ff3333; /* Red border */
+    border-radius: 30px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff3333; /* Red background on hover */
+    color: #111;
+}
+
+.hero {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%), url(background.jpg); /* Replace 'your-background-image.jpg' with your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-heading {
+    font-family: 'Kraken', sans-serif;
+    font-size: 6rem; /* Larger font size */
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(0,0,0,0.5); /* Text shadow */
+}
+
+.hero-subheading {
+    font-size: 2rem; /* Larger font size */
+    color: #fff;
+}
+
+.featured-content {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.featured-content h2 {
+    font-family: 'Kraken', sans-serif;
+    font-size: 3rem; /* Larger font size */
+    color: #ff3333; /* Red color */
+    margin-bottom: 20px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.content-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.content-item img:hover {
+    transform: scale(1.05);
+}
+
+.content-item h3 {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.content-item p {
+    color: #ccc;
+}
+
+footer {
+    background-color: #111;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-family: 'Kraken', sans-serif;
+    font-size: 3rem; /* Larger font size */
+    color: #ff3333; /* Red color */
+    margin-bottom: 20px;
+}
+
+.footer-content p {
+    font-size: 1.5rem; /* Larger font size */
+    color: #fff;
+    margin: 10px 0;
+}
+/* Existing styles */
+
+/* Add the following styles for the movie buttons */
+.Movbtn {
+    padding: 15px 30px; /* Larger padding */
+    font-size: 1.5rem; /* Larger font size */
+    font-family: Kraken, sans-serif;
+    border: 2px solid #ff3333; /* Same border as existing buttons */
+    border-radius: 30px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.Movbtn:hover {
+    background-color: #ff3333; /* Red background on hover */
+    color: #111;
+}
+span {
+    color: red;
+    font-family: Kraken, sans-serif;
+    font-size: 50px;
+}
+
+h1 {
+  font-family: Kraken,sans-serif;
+}
+
+.suits {
+    width: 50%;
+    height: 50%;
+    border: solid 5px rgb(67, 9, 9);
+    border-radius: 90px;
+}
+
+.Move {
+    border: solid 5px rgb(67, 9, 9);
+    border-radius: 90px;
+    width: 70%;
+    padding: 25px;
+}
