@@ -133,23 +133,6 @@ footer {
 /* Existing styles */
 
 /* Add the following styles for the movie buttons */
-.Movbtn {
-    padding: 15px 30px; /* Larger padding */
-    font-size: 1.5rem; /* Larger font size */
-    font-family: Kraken, sans-serif;
-    border: 2px solid #ff3333; /* Same border as existing buttons */
-    border-radius: 30px;
-    background-color: transparent;
-    color: #fff;
-    cursor: pointer;
-    margin: 10px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.Movbtn:hover {
-    background-color: #ff3333; /* Red background on hover */
-    color: #111;
-}
 span {
     color: red;
     font-family: Kraken, sans-serif;
