@@ -1,3 +1,4 @@
+/* Existing styles */
 @font-face {
     font-family: 'Kraken';
     src: url(Kraken-X3wwK.ttf);
@@ -29,7 +30,7 @@ header {
     justify-content: center;
 }
 
-.btn {
+.btn, #pass, .Movbtn {
     padding: 10px 20px;
     font-size: 1.2rem;
     font-family: Kraken, sans-serif;
@@ -42,7 +43,7 @@ header {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.btn:hover {
+.btn:hover, #pass:hover, .Movbtn:hover {
     background-color: #ff3333; /* Red background on hover */
     color: #111;
 }
@@ -130,7 +131,6 @@ footer {
     color: #fff;
     margin: 10px 0;
 }
-/* Existing styles */
 
 /* Add the following styles for the movie buttons */
 span {
@@ -156,31 +156,29 @@ h1 {
     width: 70%;
     padding: 25px;
 }
-#pass{
-    padding: 10px 20px;
-    font-size: 1.2rem;
+
+#pass, #passing, #password {
     font-family: Kraken, sans-serif;
+}
+
+#pass, #passing {
+    font-size: 1.2rem;
     border: 2px solid #ff3333; /* Red border */
     border-radius: 30px;
     background-color: transparent;
     color: #fff;
     cursor: pointer;
     margin: 0 10px;
+    padding: 10px 20px;
     transition: background-color 0.3s, color 0.3s;
 }
 
-#pass:hover{
+#pass:hover {
     background-color: #ff3333; /* Red background on hover */
     color: #111;  
 }
 
-#passing {
-    font-family: Kraken, sans-serif;
-    color: #ff3333;
-    font-size: 50px;
-}
-
-#password{
+#password {
     background: black;
     border: 2px solid #ff3333;
     color: #ff3333;
@@ -209,4 +207,31 @@ h1 {
 .Movbtn:hover {
     background-color: #ff3333; /* Red background on hover */
     color: #111;
+}
+
+/* Media queries for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    .hero-heading {
+        font-size: 4rem;
+    }
+
+    .hero-subheading {
+        font-size: 1.5rem;
+    }
+
+    .featured-content h2 {
+        font-size: 2rem;
+    }
+
+    .content-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-content h3 {
+        font-size: 2rem;
+    }
+
+    .footer-content p {
+        font-size: 1rem;
+    }
 }
