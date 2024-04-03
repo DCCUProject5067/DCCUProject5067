@@ -173,3 +173,57 @@ h1 {
     width: 70%;
     padding: 25px;
 }
+#pass{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: Kraken, sans-serif;
+    border: 2px solid #ff3333; /* Red border */
+    border-radius: 30px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#pass:hover{
+    background-color: #ff3333; /* Red background on hover */
+    color: #111;  
+}
+
+#passing {
+    font-family: Kraken, sans-serif;
+    color: #ff3333;
+    font-size: 50px;
+}
+
+#password{
+    background: black;
+    border: 2px solid #ff3333;
+    color: #ff3333;
+    font-size: 20px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.Movbtn {
+    padding: 5px; /* Larger padding */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5rem; /* Larger font size */
+    font-family: Kraken, sans-serif;
+    border: 2px solid #ff3333; /* Same border as existing buttons */
+    border-radius: 30px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    height: 50px;
+    width: 300px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.Movbtn:hover {
+    background-color: #ff3333; /* Red background on hover */
+    color: #111;
+}
