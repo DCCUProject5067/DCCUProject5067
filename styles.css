@@ -21,7 +21,7 @@ header {
 .headh1 {
     font-family: 'Kraken', sans-serif;
     font-size: 3rem;
-    color: #ff3333; /* Red color */
+    color: red; /* Red color */
     margin-bottom: 20px;
 }
 
@@ -34,7 +34,7 @@ header {
     padding: 10px 20px;
     font-size: 1.2rem;
     font-family: Kraken, sans-serif;
-    border: 2px solid #ff3333; /* Red border */
+    border: 2px solid red; /* Red border */
     border-radius: 30px;
     background-color: transparent;
     color: #fff;
@@ -44,7 +44,7 @@ header {
 }
 
 .btn:hover, #pass:hover, .Movbtn:hover {
-    background-color: #ff3333; /* Red background on hover */
+    background-color: red; /* Red background on hover */
     color: #111;
 }
 
@@ -82,7 +82,7 @@ header {
 .featured-content h2 {
     font-family: 'Kraken', sans-serif;
     font-size: 3rem; /* Larger font size */
-    color: #ff3333; /* Red color */
+    color: red; /* Red color */
     margin-bottom: 20px;
 }
 
@@ -122,7 +122,7 @@ footer {
 .footer-content h3 {
     font-family: 'Kraken', sans-serif;
     font-size: 3rem; /* Larger font size */
-    color: #ff3333; /* Red color */
+    color: red; /* Red color */
     margin-bottom: 20px;
 }
 
@@ -163,7 +163,7 @@ h1 {
 
 #pass, #passing {
     font-size: 1.2rem;
-    border: 2px solid #ff3333; /* Red border */
+    border: 2px solid red; /* Red border */
     border-radius: 30px;
     background-color: transparent;
     color: #fff;
@@ -174,14 +174,14 @@ h1 {
 }
 
 #pass:hover {
-    background-color: #ff3333; /* Red background on hover */
+    background-color: red; /* Red background on hover */
     color: #111;  
 }
 
 #password {
     background: black;
-    border: 2px solid #ff3333;
-    color: #ff3333;
+    border: 2px solid red;
+    color: red;
     font-size: 20px;
     height: 50px;
     margin-top: 5px;
@@ -193,7 +193,7 @@ h1 {
     padding-right: 20px;
     font-size: 1.5rem; /* Larger font size */
     font-family: Kraken, sans-serif;
-    border: 2px solid #ff3333; /* Same border as existing buttons */
+    border: 2px solid red; /* Same border as existing buttons */
     border-radius: 30px;
     background-color: transparent;
     color: #fff;
@@ -205,7 +205,7 @@ h1 {
 }
 
 .Movbtn:hover {
-    background-color: #ff3333; /* Red background on hover */
+    background-color: red; /* Red background on hover */
     color: #111;
 }
 
