@@ -3,7 +3,9 @@
   font-family: 'Kraken';
   src: url(Kraken-X3wwK.ttf);
 }
-
+#dates {
+  font-family: Arial;
+}
 body {
   margin: 0;
   padding: 0;
