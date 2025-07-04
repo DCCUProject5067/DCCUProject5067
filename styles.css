@@ -196,6 +196,14 @@ main {
     justify-content: center;
 }
 
+/* --- CHANGES START HERE --- */
+.explore-buttons .btn {
+    min-width: 220px;
+    white-space: nowrap;
+    text-align: center;
+}
+/* --- CHANGES END HERE --- */
+
 .btn,
 .vip-btn {
     display: inline-block;
