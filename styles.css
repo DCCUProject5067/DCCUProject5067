@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Montserrat:wght@400;700&display=swap');
+
+/* Justice League Font */
+@font-face {
+    font-family: 'JusticeLeague';
+    src: url('JUSTICE LEAGUE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* DC Color Palette Variables */
+:root {
+    --dc-black: #18181c;   /* 23.7% */
+    --dc-red: #ff2323;     /* 18.4% */
+    --dc-blue: #0057b8;    /* 15.8% */
+    --dc-green: #1ed760;   /* 15.8% */
+    --dc-yellow: #ffe600;  /* 13.2% */
+    --dc-white: #f4f4f4;   /* 7.9% */
+    --dc-purple: #7c3aed;  /* 2.6% */
+    --dc-gold: #ffd700;    /* 2.6% */
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, var(--dc-black) 0%, var(--dc-blue) 100%);
+    min-height: 100vh;
+    color: var(--dc-white);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--dc-black);
+    padding: 0 40px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'JusticeLeague', 'Orbitron', Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--dc-blue);
+    text-shadow: 2px 2px 12px var(--dc-black), 0 0 8px var(--dc-blue);
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    font-family: 'Orbitron', Arial, sans-serif;
+    color: var(--dc-white);
+    text-decoration: none;
+    font-size: 1.15rem;
+    padding: 10px 22px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    border: 2px solid transparent;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+    background: var(--dc-yellow);
+    color: var(--dc-black);
+    box-shadow: 0 2px 12px #ffe60080;
+    border: 2px solid var(--dc-white);
+}
+
+.hero {
+    background: linear-gradient(120deg, var(--dc-black) 60%, var(--dc-blue) 100%);
+    padding: 90px 0 70px 0;
+    text-align: center;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 120vw;
+    height: 120vw;
+    background: radial-gradient(circle, var(--dc-red) 0%, transparent 60%);
+    opacity: 0.12;
+    transform: translateX(-50%) scaleY(0.5);
+    z-index: 0;
+}
+.hero h1 {
+    font-family: 'JusticeLeague', 'Orbitron', Arial, sans-serif;
+    font-size: 3.2rem;
+    margin-bottom: 12px;
+    color: var(--dc-blue);
+    text-shadow: 2px 2px 18px var(--dc-black), 0 0 8px var(--dc-blue);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+
+.hero p {
+    font-size: 1.35rem;
+    color: var(--dc-white);
+    text-shadow: 1px 1px 10px var(--dc-black);
+    font-family: 'Montserrat', Arial, sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+main {
+    max-width: 900px;
+    margin: 48px auto 0 auto;
+    padding: 0 24px;
+}
+
+.about, .explore, .movies-list {
+    background: rgba(24, 24, 28, 0.97);
+    border-radius: 16px;
+    margin-bottom: 36px;
+    padding: 38px 32px;
+    box-shadow: 0 2px 24px rgba(0,87,184,0.08), 0 2px 16px rgba(0,0,0,0.22);
+}
+
+.about h2, .explore h2 {
+    font-family: 'JusticeLeague', 'Orbitron', Arial, sans-serif;
+    color: var(--dc-blue);
+    margin-top: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.movie-card {
+    background: linear-gradient(120deg, var(--dc-black) 60%, var(--dc-blue) 100%);
+    border-radius: 14px;
+    box-shadow: 0 2px 16px #0057b822, 0 2px 8px #000a;
+    padding: 32px 28px;
+    min-width: 260px;
+    max-width: 340px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid transparent;
+}
+.movie-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 32px #0057b855, 0 2px 16px #ff232355;
+    border: 2px solid var(--dc-blue);
+}
+
+.movie-card h2 {
+    font-family: 'JusticeLeague', 'Orbitron', Arial, sans-serif;
+    color: var(--dc-red);
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.movie-card p {
+    color: var(--dc-white);
+    font-size: 1.08rem;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.explore-buttons {
+    display: flex;
+    gap: 18px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn,
+.vip-btn {
+    display: inline-block;
+    background: var(--dc-yellow);
+    color: var(--dc-black);
+    font-family: 'JusticeLeague', 'Orbitron', Arial, sans-serif;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 12px #ffd70080;
+    transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+    letter-spacing: 1px;
+    border: 2px solid var(--dc-gold);
+    text-transform: uppercase;
+}
+
+.btn:hover,
+.vip-btn:hover {
+    background: var(--dc-white);
+    color: var(--dc-blue);
+    border: 2px solid var(--dc-blue);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 4px 24px #0057b880;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: var(--dc-black);
+    color: var(--dc-blue);
+    font-size: 1.05rem;
+    letter-spacing: 1.5px;
+    margin-top: 70px;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.3);
+    font-family: 'Orbitron', Arial, sans-serif;
+}
+
+/* Suits Page Styling */
+.suits-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 64px;
+    justify-content: center;
+    background: rgba(24, 24, 28, 0.97);
+    border-radius: 16px;
+    margin-bottom: 36px;
+    padding: 48px 32px 48px 32px;
+    box-shadow: 0 2px 24px rgba(0,87,184,0.08), 0 2px 16px rgba(0,0,0,0.22);
+}
+
+.suit-card {
+    background: linear-gradient(120deg, var(--dc-black) 60%, var(--dc-blue) 100%);
+    border-radius: 14px;
+    box-shadow: 0 2px 16px #0057b822, 0 2px 8px #000a;
+    padding: 32px 28px 22px 28px;
+    min-width: 240px;
+    max-width: 380px;
+    flex: 1 1 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid transparent;
+    margin-bottom: 18px;
+}
+
+.suit-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 8px 36px #0057b855, 0 2px 16px #ff232355;
+    border: 2px solid var(--dc-blue);
+    cursor: pointer;
+}
+
+.suit-img {
+    width: 100%;
+    max-width: 360px;
+    height: 440px;
+    object-fit: contain;
+    border-radius: 14px;
+    margin-bottom: 28px;
+    background: var(--dc-black);
+    box-shadow: 0 4px 24px #0057b833;
+    border: 2px solid var(--dc-blue);
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+.suit-card:hover .suit-img {
+    box-shadow: 0 4px 32px #0057b888;
+    border: 2px solid var(--dc-blue);
+}
+
+.suit-card h2 {
+    font-family: 'JusticeLeague', 'Orbitron', Arial, sans-serif;
+    color: var(--dc-blue);
+    margin: 0;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* VIP Page Styling */
+.vip-access {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 340px;
+    margin: 48px auto 0 auto;
+    background: rgba(24, 24, 28, 0.97);
+    border-radius: 18px;
+    box-shadow: 0 2px 24px rgba(0,87,184,0.08), 0 2px 16px rgba(0,0,0,0.22);
+    max-width: 420px;
+    padding: 48px 36px 40px 36px;
+}
+
+#vip-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.vip-label {
+    font-family: 'JusticeLeague', 'Orbitron', Arial, sans-serif;
+    color: var(--dc-blue);
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 8px var(--dc-black);
+}
+
+.vip-input {
+    width: 100%;
+    max-width: 260px;
+    padding: 14px 18px;
+    font-size: 1.15rem;
+    border-radius: 8px;
+    border: 2px solid var(--dc-blue);
+    background: var(--dc-black);
+    color: var(--dc-blue);
+    font-family: 'JusticeLeague', 'Orbitron', Arial, sans-serif;
+    margin-bottom: 22px;
+    outline: none;
+    box-shadow: 0 2px 12px #0057b833;
+    transition: border 0.2s, box-shadow 0.2s;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.vip-input:focus {
+    border: 2px solid var(--dc-red);
+    box-shadow: 0 4px 24px #0057b855;
+    color: var(--dc-red);
+}
+
+.vip-error {
+    color: var(--dc-red);
+    font-size: 1rem;
+    margin-top: 8px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 0 2px 8px var(--dc-black);
+}
+
+/* Accent usage for green, purple, and gold */
+.btn.green, .vip-btn.green {
+    background: var(--dc-green);
+    color: var(--dc-black);
+    border: 2px solid var(--dc-green);
+}
+.btn.purple, .vip-btn.purple {
+    background: var(--dc-purple);
+    color: var(--dc-white);
+    border: 2px solid var(--dc-purple);
+}
+.btn.gold, .vip-btn.gold {
+    background: var(--dc-gold);
+    color: var(--dc-black);
+    border: 2px solid var(--dc-gold);
+}

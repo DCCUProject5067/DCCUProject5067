@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.C.C.U - V.I.P Access</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">D.C.C.U</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="suits.html">Suits</a></li>
+            <li><a href="VIP.html" class="active">V.I.P</a></li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <h1>V.I.P Access</h1>
+        <p>Admins only: Enter the secret password to unlock unreleased movies.</p>
+    </header>
+    <main>
+        <section class="vip-access">
+            <form id="vip-form" autocomplete="off">
+                <label for="vip-password" class="vip-label">Enter Password</label>
+                <input type="password" id="vip-password" class="vip-input" placeholder="•••••••••••••••" required>
+                <button type="submit" class="btn vip-btn">Unlock</button>
+                <p id="vip-error" class="vip-error" style="display:none;">Incorrect password. Try again.</p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 D.C.C.U. All rights reserved.</p>
+    </footer>
+    <script src="vip.js"></script>
+</body>
+</html>
