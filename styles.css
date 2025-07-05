@@ -196,13 +196,11 @@ main {
     justify-content: center;
 }
 
-/* --- CHANGES START HERE --- */
 .explore-buttons .btn {
     min-width: 220px;
     white-space: nowrap;
     text-align: center;
 }
-/* --- CHANGES END HERE --- */
 
 .btn,
 .vip-btn {
@@ -299,12 +297,17 @@ footer {
 
 .suit-card h2 {
     font-family: 'JusticeLeague', 'Orbitron', Arial, sans-serif;
-    color: var(--dc-blue);
+    color: #fff; /* White for maximum contrast */
     margin: 0;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     font-size: 1.4rem;
     text-align: center;
+    text-shadow:
+        0 0 8px #0057b8,   /* Blue glow */
+        0 0 16px #0057b8,
+        0 0 32px #fff,
+        0 0 48px #0057b8;
 }
 
 /* VIP Page Styling */
