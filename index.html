@@ -28,11 +28,10 @@
                 Dive into this cinematic world—read full screenplays or quick summaries our movies, all in one place.
             </p>
         </section>
-        <section class="explore">
-            <h2>Explore</h2>
-            <div class="explore-buttons">
-                <a href="index.html" class="btn">COMING SOON</a>
-                <a href="index.html" class="btn">COMING SOON</a>
+        <section class="dc-trivia">
+            <h2>Did You Know? Comic facts</h2>
+            <div class="dc-fact-box" id="dc-fact-box">
+                <!-- Fun fact will be inserted here by JS -->
             </div>
         </section>
     </main>
@@ -40,5 +39,63 @@
         <p>&copy; 2025 D.C.C.U. All rights reserved.</p>
     </footer>
     <script src="js/main.js"></script>
+    <script>
+        // Lesser-known DC Comics facts (in a shuffled order)
+        const dcFacts = [
+            "The original Sandman, Wesley Dodds, fought crime using a sleeping gas gun and prophetic dreams.",
+            "Superman once wielded the sword Excalibur in the comics.",
+            "The villain Calendar Man commits crimes based on holidays and significant dates.",
+            "The first superhero team in comics was the Justice Society of America, debuting in 1940.",
+            "Plastic Man was originally a criminal before gaining his powers and turning hero.",
+            "The Batcave's giant penny was originally a trophy from a battle with the Penny Plunderer.",
+            "Martian Manhunter is vulnerable to fire, a weakness unique among the Justice League.",
+            "The Flash Museum exists in Central City to honor the legacy of the speedsters.",
+            "Green Arrow was once stranded on a desert island, where he learned to become an expert archer.",
+            "The Phantom Stranger’s true origin has never been definitively revealed.",
+            "The character Animal Man is aware he is a comic book character (breaking the fourth wall).",
+            "The villain Doctor Polaris suffers from dissociative identity disorder.",
+            "The original Red Tornado was a woman named Ma Hunkel who dressed as a hero to protect her neighborhood.",
+            "Hawkman and Hawkgirl are constantly reincarnated lovers throughout history.",
+            "The Question, a faceless vigilante, inspired Rorschach in Watchmen.",
+            "The Spectre is the literal Spirit of Vengeance, bonded to a human host.",
+            "Big Barda, a New God, defected from Apokolips to join the heroes of Earth.",
+            "The villainous Starro the Conqueror was the first foe the Justice League fought together.",
+            "Batman's first sidekick was not Robin, but a dog named Ace the Bat-Hound.",
+            "The Atom (Ray Palmer) once saved the Justice League by traveling through a phone line.",
+            "The Green Lantern Corps' power rings are ineffective against anything yellow (in early comics).",
+            "Zatanna's father, Zatara, was a magician and superhero in the Golden Age.",
+            "The city of Blüdhaven is Nightwing's primary base of operations, not Gotham.",
+            "The villain Gorilla Grodd is a hyper-intelligent telepathic gorilla from Gorilla City.",
+            "The Metal Men are a team of robots, each based on a different element from the periodic table.",
+            "The character Ragman draws his powers from the souls of evildoers trapped in his suit.",
+            "Firestorm can transmute elements, not just shoot fire.",
+            "The villain Prometheus can download fighting skills directly into his brain.",
+            "The Justice League once had a mascot: Snapper Carr, a teenage sidekick.",
+            "The character Ambush Bug is known for his comedic, reality-bending adventures.",
+            "The villain Eclipso was once the original Spirit of Vengeance before the Spectre.",
+            "The Creeper is a hero with a maniacal laugh and wild appearance, created by Steve Ditko.",
+            "The Outsiders is a superhero team founded by Batman for missions the Justice League can't handle.",
+            "The character Doctor Fate wears the Helmet of Nabu, which contains the spirit of a Lord of Order.",
+            "The villain Black Hand is obsessed with death and helped start the Blackest Night event.",
+            "The hero Mister Terrific is known as the third-smartest man in the world.",
+            "The character Deadman is a ghost who can possess the living to solve crimes.",
+            "The villain Mirror Master uses mirrors to travel between dimensions.",
+            "The hero Booster Gold is from the 25th century and uses future tech to fight crime.",
+            "The villain Maxie Zeus believes he is the Greek god Zeus.",
+            "The character Vibe can create shockwaves and was a founding member of the 1980s Justice League Detroit.",
+            "The hero Blue Beetle (Ted Kord) had no superpowers, relying on gadgets and intelligence.",
+            "The villain Toyman creates deadly toys to battle Superman.",
+            "The character Phantom Lady was one of the first female superheroes, debuting in 1941.",
+            "The villain Gentleman Ghost is an actual ghost who battles Hawkman and Batman.",
+            "The hero Elongated Man is famous for his detective skills and stretching powers.",
+            "The villain Clock King is obsessed with punctuality and time-themed crimes.",
+            "The hero Animal Man once met his own writer, Grant Morrison, in the comics."
+        ];
+        // Show facts in order, one per page load, using localStorage to track progress
+        let factIndex = Number(localStorage.getItem('dcFactIndex')) || 0;
+        const factBox = document.getElementById('dc-fact-box');
+        factBox.textContent = dcFacts[factIndex % dcFacts.length];
+        localStorage.setItem('dcFactIndex', (factIndex + 1) % dcFacts.length);
+    </script>
 </body>
 </html>
