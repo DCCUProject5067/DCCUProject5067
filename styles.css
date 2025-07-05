@@ -565,3 +565,23 @@ footer {
         margin-top: 18px;
     }
 }
+/* ...existing code... */
+
+.dc-fact-box {
+    background: rgba(24, 24, 28, 0.97); /* Matches your card backgrounds */
+    border-left: 6px solid var(--dc-blue);
+    border-radius: 10px;
+    padding: 22px 28px;
+    margin: 24px 0 0 0;
+    font-size: 1.18rem;
+    color: var(--dc-blue);/* Pops against dark background */
+    font-family: 'JusticeLeague', 'Orbitron', Arial, sans-serif;
+    box-shadow: 0 2px 16px #0057b822;
+    text-align: center;
+    letter-spacing: 1px;
+}
+h2 {
+    font-family: 'JusticeLeague', 'Orbitron', Arial, sans-serif;
+}
+
+/* ...existing code... */
