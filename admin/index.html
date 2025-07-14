@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Manager</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">D.C.C.U</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../movies.html">Movies</a></li>
+            <li><a href="../suits.html">Suits</a></li>
+            <li><a href="../VIP.html">V.I.P</a></li>
+            <li><a href="index.html" class="active">Admin</a></li>
+        </ul>
+    </nav>
+    <main style="max-width:900px;margin:48px auto 0 auto;padding:0 24px;">
+        <section class="about">
+            <h2>Admin Content Manager</h2>
+            <div id="cms-root"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 D.C.C.U. All rights reserved.</p>
+    </footer>
+    <script>
+      // Mount Netlify CMS to the custom div
+      if (window.CMS_MANUAL_INIT) {
+        window.CMS_MANUAL_INIT({
+          config: window.CMS_CONFIG,
+          mountPoint: document.getElementById('cms-root')
+        });
+      }
+    </script>
+</body>
+</html>
