@@ -21,20 +21,13 @@
     <main style="max-width:900px;margin:48px auto 0 auto;padding:0 24px;">
         <section class="about">
             <h2>Admin Content Manager</h2>
-            <div id="cms-root"></div>
+            <!-- Netlify CMS will mount here -->
+            <div id="nc-root"></div>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 D.C.C.U. All rights reserved.</p>
     </footer>
-    <script>
-      // Mount Netlify CMS to the custom div
-      if (window.CMS_MANUAL_INIT) {
-        window.CMS_MANUAL_INIT({
-          config: window.CMS_CONFIG,
-          mountPoint: document.getElementById('cms-root')
-        });
-      }
-    </script>
+    <!-- Netlify CMS will auto-mount, no custom JS needed -->
 </body>
 </html>
